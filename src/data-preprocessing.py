@@ -1,6 +1,6 @@
 import pandas as pd
-path_oct = "/Users/davidxu/.cache/kagglehub/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/versions/8/2019-Oct.csv"
-path_nov = "/Users/davidxu/.cache/kagglehub/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/versions/8/2019-Nov.csv"
+path_oct = "./data/raw/2019-Oct.csv"
+path_nov = "./data/raw/2019-Nov.csv"
 chunksize = 10 ** 6
 chunks_oct = []
 cols = ["event_time", "event_type", "user_id", "price"]
@@ -43,3 +43,7 @@ df_total.shape
 df_total["price_range"] = pd.qcut(q=3, labels=["Low", "Medium", "High"], x=df_total["price"])
 df_total.head()
 df_total["price_range"].value_counts()
+
+# Export the data
+
+df_total.to_parquet("../data/processed/df.parquet.gzip", compression="gzip")
