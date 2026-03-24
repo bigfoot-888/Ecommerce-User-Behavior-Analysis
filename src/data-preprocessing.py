@@ -1,6 +1,6 @@
 import pandas as pd
-path_oct = "./data/raw/2019-Oct.csv"
-path_nov = "./data/raw/2019-Nov.csv"
+path_oct = "../data/raw/2019-Oct.csv"
+path_nov = "../data/raw/2019-Nov.csv"
 chunksize = 10 ** 6
 chunks_oct = []
 cols = ["event_time", "event_type", "user_id", "price"]
