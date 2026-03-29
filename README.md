@@ -62,7 +62,7 @@ path = kagglehub.dataset_download("mkechinov/ecommerce-behavior-data-from-multi-
 ```
 4. Place the two downloaded datasets in the project as seen below:
 ```
-Cardiovascular-Disease-Prediction/
+ecommerce-user-behavior-analysis/
 │
 ├── notebooks/
 │   └── user-behavior-analysis.ipynb
@@ -90,7 +90,7 @@ This will:
 ## Project Structure
 
 ```
-ecommerce-funnel-cohort-analysis/
+ecommerce-user-behavior-analysis/
 │
 ├── data/
 │   └── processed/
