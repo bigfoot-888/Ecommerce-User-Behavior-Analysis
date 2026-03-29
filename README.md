@@ -176,7 +176,9 @@ Users who return after the first week are very likely to remain engaged and keep
 
 ## Visualizations
 
-...
+![Basic Funnel Chart](images/basic_funnel_chart.png)
+![Price-Segmented Funnel Chart](images/segmented_funnel_chart.png)
+![User Retention Cohort Chart](images/user_cohort.png)
 
 ## PowerBI Dashboard
 
