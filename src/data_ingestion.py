@@ -1,6 +1,4 @@
-import kaggle, kagglehub
 import pandas as pd
-from dotenv import load_dotenv
 
 # Searches for a .env file and temporarily loads the variables
 def load_data():

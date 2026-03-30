@@ -1,4 +1,3 @@
-*.csv
 *.parquet
 .venv/
 __pycache__/
