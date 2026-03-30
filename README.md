@@ -119,16 +119,16 @@ ecommerce-user-behavior-analysis/
 
 ## Analysis Overview
 
-1. Data Loading
+1. **Data Loading**
 
 Loading and combining multiple monthly datasets, using chunked reading for efficiency.
 
-2. Data Preprocessing
+2. **Data Preprocessing**
 * Timestamp processing (week extraction)
 * Data cleaning (removal of invalid values)
 * Price segmentation into ranges (low, medium, high)
   
-3. Funnel Analysis
+3. **Funnel Analysis**
 
 First, a strict funnel was implemented with three stages:
 
@@ -138,7 +138,7 @@ First, a strict funnel was implemented with three stages:
 
 It is important to note that users are not obligated to follow this specific order; they could purchase a product without viewing it, or place one in their cart and buy a different one. To keep the analysis clean, only users that followed all three stages in order were considered.
 
-4. Segmented Funnel Analysis
+4. **Segmented Funnel Analysis**
 
 To give further insights on the funnel analysis, the previous funnel setup was expanded to use a price-based segmentation, with the following segments:
 
@@ -148,22 +148,13 @@ To give further insights on the funnel analysis, the previous funnel setup was e
 
 This allows us to see how user behavior and conversion rates may vary based on product prices. 
 
-5. Cohort Analysis
+5. **Cohort Analysis**
 
 Users were grouped into cohorts based on their first interaction week.
 
 **Retention** is measured as the percentage of users who return in subsequent weeks, regardless of whether they view, cart, or purchase a product. 
 
 ## Key Insights
-
-** Significant drop after first interaction
-A large proportion of users do not return after their initial visit.
-Conversion varies by price range
-Lower-priced products tend to drive higher initial engagement, while higher-priced products may show stronger purchase intent.
-Retention stabilizes after initial drop
-Users who return after the first week are more likely to remain engaged over time.
-Presence of a core user base
-A subset of users consistently interacts with the platform, indicating strong engagement among retained users.
 
 - **Significant drop after first interaction.**  
 A large proportion of users do not return after their initial visit.
@@ -176,8 +167,16 @@ Users who return after the first week are very likely to remain engaged and keep
 
 ## Visualizations
 
+### Strict Funnel Analysis
+
 ![Basic Funnel Chart](images/basic_funnel_chart.png)
+
+### Price-Segmented Funnel Analysis
+
 ![Price-Segmented Funnel Chart](images/segmented_funnel_chart.png)
+
+### User Retention Cohort Analysis
+
 ![User Retention Cohort Chart](images/user_cohort.png)
 
 ## PowerBI Dashboard
