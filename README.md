@@ -181,7 +181,7 @@ Users who return after the first week are very likely to remain engaged and keep
 
 ## PowerBI Dashboard
 
-...
+![Power BI Dashboard](images/ecommerce_user_analysis_dashboard.png)
 
 ---
 
