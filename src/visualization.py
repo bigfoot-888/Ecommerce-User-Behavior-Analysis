@@ -30,6 +30,7 @@ def visualize_price_segmented_funnel(df_funnel_price):
     return fig
 
 def visualize_cohort(df_cohort_pctg):
+    df_cohort_pctg = df_cohort_pctg.set_index("first_week")
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.heatmap(df_cohort_pctg, annot=True, fmt=".2%", cmap="Blues", linewidths=0.5,
                 linecolor='white', cbar_kws={'label': 'Retention (%)'})

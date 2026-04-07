@@ -10,5 +10,6 @@ def compute_cohort_data(df_total):
     
     cohort_pivot = cohort.pivot_table(index="first_week", columns="period", values="users")
     cohort_pctg = cohort_pivot.div(cohort_pivot[0], axis=0)
+    cohort_pctg = cohort_pctg.reset_index()
     
     return cohort_pctg
